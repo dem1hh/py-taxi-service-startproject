@@ -23,7 +23,7 @@ class Car(models.Model):
     )
 
     def __str__(self):
-        return self.manufacturer.name + " " + self.model
+        return f"{self.manufacturer.name} {self.model}"
 
 
 class Driver(AbstractUser):
